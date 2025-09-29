@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Projeto.module.css';
+import styles from './Projetos.module.css';
 
 const Projeto = ({ titulo, imagem, descricao }) => {
     return (
