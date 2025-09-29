@@ -1,12 +1,14 @@
-import { useState } from "react";
+import React from 'react';
+import styles from './Projeto.module.css';
 
-export default function Projetos(){
-  // Javascript
-  
+const Projeto = ({ titulo, imagem, descricao }) => {
+    return (
+        <div className={styles.projeto}>
+            <h2 className={styles.titulo}>{titulo}</h2>
+            <img src={imagem} alt={titulo} className={styles.imagem} />
+            <p className={styles.descricao}>{descricao}</p>
+        </div>
+    );
+};
 
-  return(
-    <div>
-      
-    </div>
-  )
-}
+export default Projeto;
