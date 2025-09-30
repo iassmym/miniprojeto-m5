@@ -1,29 +1,42 @@
-# Portfólio | Landing Page em React
+# 💜 Portfólio Pessoal — Iasmym Patrícia
 
-Este projeto é uma landing page em React que simula um portfólio pessoal para desenvolvedores.
+Este é meu portfólio desenvolvido com **React + Vite**, apresentando meus projetos, informações pessoais e formas de contato. O design segue um estilo **minimalista lilás**, com layout responsivo e animações sutis.
 
-## 🖥️ Tecnologias utilizadas
+---
 
-- React 18
-- CSS Modules
-- React Slick (Carrossel de projetos)
+## 🚀 Tecnologias Utilizadas
 
-## 📁 Estrutura de componentes
+| Tecnologia | Versão |
+|------------|--------|
+| React      | 18+    |
+| Vite       | 4+     |
+| CSS Modules | -     |
 
-- `Menu`: Barra de navegação com links
-- `Hero`: Seção principal com imagem, texto e modal de contato
-- `ProjetosCarrossel`: Componente com carrossel para exibir os projetos
-- `Footer`: Rodapé com link para o GitHub
+---
 
-## 📄 Como executar o projeto
+## 📸 Seções do Projeto
+
+- ✅ **Menu de navegação fixo**
+- ✅ **Hero com apresentação e imagem**
+- ✅ **Carrossel de Projetos**
+- ✅ **Seção "Quem Sou Eu"**
+- ✅ **Seção de Contato com Download de Currículo**
+- ✅ **Footer com créditos**
+
+---
+
+## 📦 Como Rodar o Projeto
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio
+# Clonar o repositório
+git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
 
-# Instale as dependências
+# Acessar a pasta
+cd SEU-REPOSITORIO
+
+# Instalar dependências
 npm install
 
-# Inicie o projeto
+# Rodar em modo desenvolvimento
 npm run dev
 
