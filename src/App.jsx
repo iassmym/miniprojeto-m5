@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from './components/Menu/Menu.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import Footer from './components/Footer/Footer.jsx';
-import ProjetosCarrossel from './components/ProjetosCarrossel.jsx';
+import ProjetosCarrossel from './components/Projetos/ProjetosCarrossel.jsx';
 import Sobre from './components/Sobre/Sobre.jsx';
 import Contato from './components/Contato/Contato.jsx';
 import './App.css';

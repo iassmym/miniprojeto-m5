@@ -1,11 +1,10 @@
-
-// src/components/ProjetosCarrossel.jsx
+// src/components/Projetos/ProjetosCarrossel.jsx
 
 import React from 'react';
 import Slider from 'react-slick';
-import Projeto from './Projetos/Projeto.jsx'; // Certifique-se de que o caminho está correto
-import 'slick-carousel/slick/slick.css'; 
-import 'slick-carousel/slick/slick-theme.css'; 
+import Projeto from './Projeto.jsx'; // Caminho corrigido
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const ProjetosCarrossel = ({ projetos }) => {
   const settings = {
@@ -31,3 +30,4 @@ const ProjetosCarrossel = ({ projetos }) => {
 };
 
 export default ProjetosCarrossel;
+
