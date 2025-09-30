@@ -1,3 +1,4 @@
+// src/components/Projeto.jsx
 import React from 'react';
 import styles from './Projetos.module.css';
 
@@ -12,3 +13,4 @@ const Projeto = ({ titulo, imagem, descricao }) => {
 };
 
 export default Projeto;
+

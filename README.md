@@ -1,12 +1,29 @@
-# React + Vite
+# Portfólio | Landing Page em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma landing page em React que simula um portfólio pessoal para desenvolvedores.
 
-Currently, two official plugins are available:
+## 🖥️ Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18
+- CSS Modules
+- React Slick (Carrossel de projetos)
 
-## Expanding the ESLint configuration
+## 📁 Estrutura de componentes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `Menu`: Barra de navegação com links
+- `Hero`: Seção principal com imagem, texto e modal de contato
+- `ProjetosCarrossel`: Componente com carrossel para exibir os projetos
+- `Footer`: Rodapé com link para o GitHub
+
+## 📄 Como executar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
+

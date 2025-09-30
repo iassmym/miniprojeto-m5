@@ -1,3 +1,5 @@
+/* src/components/Hero/Hero.module.css */
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -39,7 +41,6 @@
 }
 
 .primaryBtn {
-  background: #ff3cac;
   background: linear-gradient(90deg, #784ba0, #ff3cac);
   color: white;
   padding: 0.8rem 1.6rem;
@@ -51,6 +52,7 @@
 }
 
 .primaryBtn:hover {
+  transform: scale(1.05);
   opacity: 0.9;
 }
 
@@ -67,6 +69,7 @@
 .secondaryBtn:hover {
   background: #d291ff;
   color: #fff;
+  transform: scale(1.05);
 }
 
 .imageWrapper {
@@ -93,6 +96,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9999;
 }
 
 .modal {
@@ -113,3 +117,4 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
