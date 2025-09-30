@@ -1,56 +1,42 @@
-import { useState } from "react";
+// src/components/Hero/Hero.jsx
+import React, { useState } from "react";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
- function toggleModal() {
-  if (isModalOpen) {
-    setIsModalOpen(false); // Se já estava aberto → fecha
-  } else {
-    setIsModalOpen(true);  // Se estava fechado → abre
-  }
-}
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
-        <p className={styles.subtitle}>OLÁ, EU SOU 👋</p>
-        <h1 className={styles.title}>
-          Tábata <br /> Macedo
-        </h1>
-        <h2 className={styles.role}>
-          Desenvolvedora Fullstack <span>|</span> Educação
-        </h2>
+        <p className={styles.subtitle}>Seja bem-vindo!</p>
+        <h1 className={styles.title}>Meu Portfólio</h1>
+        <p className={styles.role}>Desenvolvedor Front-End</p>
         <p className={styles.description}>
-          Transformo ideias em experiências digitais modernas, acessíveis e
-          impactantes. Vamos construir algo incrível juntos?
+          Transformando ideias em interfaces bonitas e funcionais.
         </p>
-
         <div className={styles.buttons}>
-          <button onClick={toggleModal} className={styles.primaryBtn}>
-            Fale Comigo
+          <button className={styles.primaryBtn} onClick={() => setModalOpen(true)}>
+            Contato
           </button>
-          <a href="/curriculo.pdf" className={styles.secondaryBtn}>
-            Meu currículo
+          <a href="#projetos" className={styles.secondaryBtn}>
+            Ver Projetos
           </a>
         </div>
       </div>
 
       <div className={styles.imageWrapper}>
         <img
-          src="/foto.png" // 👉 coloque sua imagem aqui na pasta public
-          alt="Tábata Macedo sorrindo com microfone e computador ao fundo"
+          src="/perfil.jpeg"
+          alt="Perfil"
           className={styles.image}
         />
       </div>
 
-      {isModalOpen && (
-        <div className={styles.modalOverlay}>
-          <div className={styles.modal}>
-            <h3>Entre em contato 💌</h3>
-            <p>Email: <strong>tabata.macedo@email.com</strong></p>
-            <button onClick={toggleModal} className={styles.closeBtn}>
+      {modalOpen && (
+        <div className={styles.modalOverlay} onClick={() => setModalOpen(false)}>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <p>Entre em contato comigo!</p>
+            <button className={styles.closeBtn} onClick={() => setModalOpen(false)}>
               Fechar
             </button>
           </div>

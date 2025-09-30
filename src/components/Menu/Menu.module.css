@@ -1,12 +1,22 @@
-.containerMenu{
-  background-color: transparent;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.header {
+  background: linear-gradient(90deg, #f5f3ff, #ebe4ff);
+  padding: 15px 0;
+  border-bottom: 1px solid #e0d4ff;
 }
 
-.menu{
+.nav {
   display: flex;
-  list-style: none;
-  gap: 16px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #4b0082;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  color: black;
 }

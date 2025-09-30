@@ -1,0 +1,5 @@
+{
+  titulo: 'Projeto Módulo',
+  imagem: '/projeto_modulo.png',
+  descricao: 'Exemplo de projeto usando React, HTML e CSS.',
+}

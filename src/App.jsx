@@ -1,32 +1,41 @@
-// src/App.jsx
-
-import Menu from "./components/Menu/Menu.jsx";
-import Hero from "./components/Hero/Hero.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import ProjetosCarrossel from "./components/ProjetosCarrossel.jsx";
+import React from 'react';
+import Menu from './components/Menu/Menu.jsx';
+import Hero from './components/Hero/Hero.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import ProjetosCarrossel from './components/ProjetosCarrossel.jsx';
+import './App.css';
 
 const projetos = [
   {
-    titulo: 'Projeto 1',
-    imagem: '/projeto1.jpg', // coloque a imagem em /public
-    descricao: 'Descrição do projeto 1',
+    titulo: 'Landing Page Portfolio',
+    imagem: '/foto.png',
+    descricao: 'Landing page criada em React como portfólio pessoal.',
   },
   {
-    titulo: 'Projeto 2',
-    imagem: '/projeto2.jpg', // coloque a imagem em /public
-    descricao: 'Descrição do projeto 2',
+    titulo: 'Projeto To-Do List',
+    imagem: '/mocanegra.webp',
+    descricao: 'Lista de tarefas criada com React e useState.',
   },
-  // Adicione mais projetos se quiser
+  {
+    titulo: 'Projeto Módulo',
+    imagem: '/projeto_modulo.png',
+    descricao: 'Exemplo de projeto usando React, HTML e CSS.',
+  },
 ];
 
 export default function App() {
   return (
-    <div>
+    <>
       <Menu />
       <Hero />
-      <h1>Meus Projetos</h1>
-      <ProjetosCarrossel projetos={projetos} />
+
+      <section>
+        <h1>Meus Projetos</h1>
+        <ProjetosCarrossel projetos={projetos} />
+      </section>
+
       <Footer />
-    </div>
+    </>
   );
 }
+

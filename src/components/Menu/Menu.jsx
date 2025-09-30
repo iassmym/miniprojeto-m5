@@ -1,15 +1,15 @@
-import styles from './Menu.module.css';
+// src/components/Menu/Menu.jsx
+import React from "react";
+import styles from "./Menu.module.css";
 
-export default function Menu(){
-  return(
-    <header className={styles.containerMenu}>
-      <p className={styles.logo}>👩🏾‍💻Tábata Macedo</p>
-      <ul className={styles.menu}>
-        <li>Sobre mim</li>
-        <li>Meus projetos</li>
-        <li>Contato</li>
-      </ul>
+export default function Menu() {
+  return (
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <a href="#home">Início</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
-  )
+  );
 }
-

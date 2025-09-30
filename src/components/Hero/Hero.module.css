@@ -1,11 +1,9 @@
-/* src/components/Hero/Hero.module.css */
-
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4rem 8%;
-  color: #fff;
+  color: #2d2d2d;
 }
 
 .content {
@@ -13,7 +11,7 @@
 }
 
 .subtitle {
-  color: #d291ff;
+  color: #8b5cf6;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -22,17 +20,20 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin: 0;
+  color: #4b0082;
 }
 
 .role {
   font-size: 1.2rem;
   margin: 0.5rem 0 1rem;
+  color: #5b21b6;
 }
 
 .description {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
+  color: #3f3f46;
 }
 
 .buttons {
@@ -41,7 +42,7 @@
 }
 
 .primaryBtn {
-  background: linear-gradient(90deg, #784ba0, #ff3cac);
+  background: #8b5cf6;
   color: white;
   padding: 0.8rem 1.6rem;
   border: none;
@@ -57,17 +58,17 @@
 }
 
 .secondaryBtn {
-  border: 2px solid #d291ff;
+  border: 2px solid #8b5cf6;
   padding: 0.8rem 1.6rem;
   border-radius: 10px;
-  color: #d291ff;
+  color: #8b5cf6;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .secondaryBtn:hover {
-  background: #d291ff;
+  background: #8b5cf6;
   color: #fff;
   transform: scale(1.05);
 }
@@ -79,10 +80,11 @@
 }
 
 .image {
-  max-width: 350px;
-  border-radius: 30% 70% 70% 30%;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px; /* Quadrada com bordas arredondadas */
   object-fit: cover;
-  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 20px rgba(139, 92, 246, 0.3);
 }
 
 /* Modal */
@@ -92,7 +94,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,21 +102,23 @@
 }
 
 .modal {
-  background: #1c1c29;
+  background: white;
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
-  color: #fff;
+  color: #2d2d2d;
   max-width: 400px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .closeBtn {
   margin-top: 1rem;
-  background: #ff3cac;
+  background: #8b5cf6;
   color: #fff;
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   cursor: pointer;
 }
+
 
