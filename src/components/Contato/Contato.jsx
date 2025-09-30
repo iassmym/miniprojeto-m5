@@ -3,7 +3,7 @@ import styles from "./Contato.module.css";
 
 export default function Contato() {
   return (
-    <section id="contato" className={styles.contato}>
+    <section className={styles.contato}>
       <h2>Contato</h2>
 
       <div className={styles.cards}>
@@ -11,18 +11,15 @@ export default function Contato() {
           ✉️ <span>Email: iasmympatricia7@gmail.com</span>
         </a>
 
-        <a href="tel:31982013646" className={styles.card}>
-          📞 <span>Telefone: 31 98201-3646</span>
+        <a href="https://wa.me/5531982013646" target="_blank" rel="noopener noreferrer" className={styles.card}>
+          📞 <span>WhatsApp: 31 98201-3646</span>
         </a>
 
         <a href="/curriculo.pdf" download className={styles.card}>
           📄 <span>Baixar Currículo</span>
         </a>
       </div>
-
-      <div className={styles.pdfContainer}>
-        <iframe src="/curriculo.pdf" title="Currículo" className={styles.pdfViewer}></iframe>
-      </div>
     </section>
   );
 }
+

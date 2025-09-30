@@ -1,4 +1,3 @@
-// src/components/Hero/Hero.jsx
 import React, { useState } from "react";
 import styles from "./Hero.module.css";
 
@@ -9,10 +8,10 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.content}>
         <p className={styles.subtitle}>Seja bem-vindo!</p>
-        <h1 className={styles.title}>Meu Portfólio</h1>
-        <p className={styles.role}>Desenvolvedor Front-End</p>
+        <h1 className={styles.title}>Eu sou Iasmym Patrícia</h1>
+        <p className={styles.role}>Desenvolvedora Web Full Stack em formação</p>
         <p className={styles.description}>
-          Transformando ideias em interfaces bonitas e funcionais.
+          Apaixonada por tecnologia e sempre buscando transformar ideias em código!
         </p>
         <div className={styles.buttons}>
           <button className={styles.primaryBtn} onClick={() => setModalOpen(true)}>

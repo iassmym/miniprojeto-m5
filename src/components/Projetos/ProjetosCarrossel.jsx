@@ -1,33 +1,41 @@
-// src/components/Projetos/ProjetosCarrossel.jsx
+import React from "react";
+import styles from "./ProjetosCarrossel.module.css";
 
-import React from 'react';
-import Slider from 'react-slick';
-import Projeto from './Projeto.jsx'; // Caminho corrigido
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+const projetos = [
+  {
+    titulo: "Mineprojeto M4",
+    imagem: "/perfil.jpeg",
+    descricao: "Um projeto em que aprendemos a usar o localhost",
+    link: "https://github.com/iassmym/MINIPROJETOM4ultimaversao.git"
+  },
+  {
+    titulo: "Projeto M2 - Quiz de Computação",
+    imagem: "/perfil.jpeg",
+    descricao: "Um quiz divertido para testar conhecimentos de computação",
+    link: "https://github.com/iassmym/projeto.M2.git"
+  }
+];
 
-const ProjetosCarrossel = ({ projetos }) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
+export default function ProjetosCarrossel() {
   return (
-    <Slider {...settings}>
-      {projetos.map((projeto, index) => (
-        <Projeto
-          key={index}
-          titulo={projeto.titulo}
-          imagem={projeto.imagem}
-          descricao={projeto.descricao}
-        />
-      ))}
-    </Slider>
+    <section className={styles.container}>
+      <h2 className={styles.titulo}>Meus Projetos</h2>
+
+      <div className={styles.carrossel}>
+        {projetos.map((proj, index) => (
+          <a
+            key={index}
+            className={styles.card}
+            href={proj.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={proj.imagem} alt={proj.titulo} className={styles.imagem} />
+            <h3>{proj.titulo}</h3>
+            <p>{proj.descricao}</p>
+          </a>
+        ))}
+      </div>
+    </section>
   );
-};
-
-export default ProjetosCarrossel;
-
+}
